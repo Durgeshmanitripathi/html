@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <header>
+        <h1>Event Booking Form</h1>
+    </header>
+
+    <form id="eventForm">
+        <label for="Your Name">Your Name:</label>
+        <input type="text" id="Your Name" name="Your Name" required> 
+
+       <label for="Your Mail">Your Mail:</label>
+        <input type="email" id="Your Mail" name="Your Mail" required> 
+        
+        <label for="Your phone no">Your Phone no:</label>
+        <input type="number" id="number" name="number" required>
+        
+        <label for="eventName">Event Name:</label>
+        <select name="eventName" id="eventName" required>
+            <option value="Wedding planning"></option>
+            <option value="private parties">private parties</option>
+            <option value="coorporate events">coorporate events</option>
+            <option value="concerts">concerts</option>
+            <option value="Seminar">Seminar</option>
+        </select>
+        <!-- <input type="select" id="eventName" name="eventName" required> -->
+        
+
+        <label for="dateTimeLocal">Event Date:</label>
+        <input type="datetime-local" id="dateTimeLocal" name="dateTimeLocal" required>
+
+        <label for="eventLocation">Event Location:</label>
+        <input type="text" id="eventLocation" name="eventLocation" required>
+        
+
+        <button onclick=saving() class="btn">Submit</button>
+    </form>
+
+    <script src="sign.js">
+    
+    </script>
+
+
+</body>
+</html>
